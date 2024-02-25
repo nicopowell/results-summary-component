@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Nicolas Powell">
-  <meta name="description" content="Frontend Mentor Results summary component Challenge">
-  <meta name="keywords" content="Frontend Mentor, Frontend, HTML, CSS">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Frontend Mentor | Results summary component</title>
-</head>
-<body>
-  <main>
-    <section></section>
-    <section></section>
-  </main>
-<!-- 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-   -->
-  <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nicolas Powell" />
+    <meta name="description" content="Frontend Mentor Results summary component Challenge" />
+    <meta name="keywords" content="Frontend Mentor, Frontend, HTML, CSS" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <div id="card">
+        <section id="scoreSection">
+          <h1>Your Result</h1>
+          <div id="scoreCircle">
+            <p id="bigNumber">76</p>
+            <p id="smallNumber">of 100</p>
+          </div>
+          <p id="status">Great</p>
+          <p id="lead">You scored higher than 65% of the people who have taken these tests.</p>
+        </section>
+        <section id="summarySection">
+          <h2>Summary</h2>
+          <div>
+            <div>Reaction</div>
+            <div>80 / 100</div>
+          </div>
+          <div>
+            <div>Memory</div>
+            <div>92 / 100</div>
+          </div>
+          <div>
+            <div>Verbal</div>
+            <div>61 / 100</div>
+          </div>
+          <div>
+            <div>Visual</div>
+            <div>72 / 100</div>
+          </div>
+          <button>Continue</button>
+        </section>
+      </div>
+    </main>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
