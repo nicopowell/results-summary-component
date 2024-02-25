@@ -1,8 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  max-width: 600px;
+  width: 100vw;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 15px hsl(221, 100%, 96%);
+  border-radius: 1.5rem;
+}
+
+#scoreSection {
+  background: linear-gradient(hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%));
+  width: 50%;
+  height: 100%;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+  color: hsl(221, 100%, 96%);
+  font-weight: 500;
+}
+
+#scoreCircle {
+  background: linear-gradient(rgba(78, 33, 202, 0.781), hsla(241, 72%, 46%, 0));
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#bigNumber {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+#smallNumber {
+  font-size: 1rem;
+  color: hsla(241, 100%, 89%, 0.678);
+}
+
+#status {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#lead {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 0.25rem 0.5rem 0.25rem;
+  color: hsl(241, 100%, 89%);
+}
+
+#summarySection {
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 1rem;
+}
+
+.summaryDivs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.summaryDivs p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.712);
+}
+
+p span{
+  color: hsl(224, 30%, 27%);
+}
+
+figure {
+  display: flex;
+  font-weight: 600;
+  gap: 0.5rem;
+}
+
+#reaction {
+  background-color: hsla(0, 100%, 67%, 0.08);
+}
+
+#reaction figure {
+  color: hsl(0, 100%, 67%);
+}
+
+#memory {
+  background-color: hsla(39, 100%, 56%, 0.08);
+}
+
+#memory figure {
+  color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+  background-color: hsla(166, 100%, 37%, 0.08);
+}
+
+#verbal figure {
+  color: hsl(166, 100%, 37%);
+}
+
+#visual {
+  background-color: hsla(234, 85%, 45%, 0.08);
+}
+
+#visual figure {
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border: none;
+  color: hsl(221, 100%, 96%);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+button:hover{
+  background: linear-gradient(hsla(252, 100%, 67%, 0.938), hsla(241, 81%, 54%, 0.938));
+}
+
+button:active{
+  background: hsl(224, 30%, 27%);
+}
+
 footer {
   font-size: 11px;
   text-align: center;
+  padding-bottom: 0.5rem;
 }
 
 footer a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  main{
+    align-items: start;
+  }
+  
+  #card {
+    flex-direction: column;
+  }
+
+  #scoreSection {
+    width: 100%;
+    gap: 1rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  #summarySection {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .summaryDivs {
+    padding: 1rem;
+  }
+ 
 }
